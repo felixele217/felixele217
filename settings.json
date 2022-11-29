@@ -1,40 +1,63 @@
 {
-    "git.autofetch": true,
-  
-    "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,
-    "editor.tabCompletion": "onlySnippets",
-  
-    "diffEditor.ignoreTrimWhitespace": false,
-  
-    "php.validate.executablePath": "/opt/homebrew/bin/php",
-    "[php]": {
-      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    },
-  
-    "workbench.startupEditor": "none",
-  
-    "files.autoSave": "afterDelay",
-  
-    "blade.format.enable": true,
-    "[blade]": {
-      "editor.autoClosingBrackets": "always"
-    },
-  
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-  
-    "eslint.validate": ["typescript", "typescriptreact", "javascript", "vue"],
-  
-    "workbench.colorTheme": "One Dark Pro",
-  
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-  
-    "files.associations": {
-      "*.ts": "typescript",
-      "*.tsx": "typescriptreact"
-    }
-  }
-  
+  "git.autofetch": true,
+
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.tabCompletion": "off",
+
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "php.validate.executablePath": "/opt/homebrew/bin/php",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+
+  "workbench.startupEditor": "none",
+
+  "files.autoSave": "afterDelay",
+
+  "blade.format.enable": true,
+  "[blade]": {
+    "editor.autoClosingBrackets": "always"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "vue"],
+
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+
+  "files.associations": {
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
+
+  "window.titleBarStyle": "native",
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.titleBar": "inline",
+  "customizeUI.activityBarHideSettings": true,
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.visible": false,
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  "workbench.colorTheme": "One Dark Pro",
+
+  "macros": {
+    "splitAndClose": [
+      "workbench.action.splitEditorToRightGroup",
+      "workbench.action.focusPreviousGroup",
+      "workbench.action.closeActiveEditor"
+    ]
+  },
+  "window.zoomLevel": -1
+}
