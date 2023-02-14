@@ -1,0 +1,22 @@
+{
+    "CreateReactComponent": {
+        "prefix": "comp",
+        "body": [
+            "interface Props {",
+            " ",
+            "}",
+            " ",
+            "export default function $1({",
+            " ",
+            "}: Props) {",
+            "    return",
+            "}"
+        ]
+    },
+    "ConsoleLog": {
+        "prefix": "con",
+        "body": [
+            "console.log($1)"
+        ]
+    }
+}
