@@ -1,0 +1,27 @@
+{
+  "Method": {
+    "prefix": "met",
+    "body": ["public function $1 ($2): $3", "{", " .   $4", "}"]
+  },
+
+  "Test Method:": {
+    "prefix": "test",
+    "body": ["it ('$1', function () {", "    $2", "});"]
+  },
+
+  "Tinker": {
+    "prefix": "tinker",
+    "body": ["eval(\\Psy\\sh());"]
+  },
+
+  "Assert Inertia": {
+    "prefix": "assertInertia",
+    "body": [
+        "->assertInertia(",
+        "fn (AssertableInertia $$page) => $$page",
+        "->component('$1')",
+        " ",
+        ");"
+    ]
+  }
+}
