@@ -1,22 +1,24 @@
 {
-    "CreateReactComponent": {
-        "prefix": "comp",
-        "body": [
-            "interface Props {",
-            " ",
-            "}",
-            " ",
-            "export default function $1({",
-            " ",
-            "}: Props) {",
-            "    return",
-            "}"
-        ]
-    },
-    "ConsoleLog": {
-        "prefix": "con",
-        "body": [
-            "console.log($1)"
-        ]
-    }
+  "Create-React-Component": {
+    "prefix": "comp",
+    "body": [
+      "interface Props {",
+      " ",
+      "}",
+      " ",
+      "export default function $1(props: Props) {",
+      "    return",
+      "}"
+    ]
+  },
+
+  "Console-Log": {
+    "prefix": "con",
+    "body": ["console.log($1)"]
+  },
+
+  "Inertia-Auth": {
+    "prefix": "auth",
+    "body": ["const auth = usePage().props.auth as { user: User }"]
+  }
 }
