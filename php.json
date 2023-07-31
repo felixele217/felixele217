@@ -23,5 +23,18 @@
         " ",
         ");"
     ]
+  },
+
+   "Laravel Model Attribute": {
+    "prefix": "attr",
+    "body": [
+      "protected function firstName(): Attribute",
+      "{",
+      "return Attribute::make(",
+      "   get: fn (string $value) => ucfirst($value),",
+      "   set: fn (string $value) => strtolower($value),",
+      ");",
+      "}"
+    ]
   }
 }
