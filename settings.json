@@ -1,63 +1,129 @@
 {
-  "git.autofetch": true,
-
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "editor.tabCompletion": "off",
-
+  /**
+   * Better Defaults
+   **/
+  "editor.copyWithSyntaxHighlighting": false,
   "diffEditor.ignoreTrimWhitespace": false,
-
-  "php.validate.executablePath": "/opt/homebrew/bin/php",
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-
-  "workbench.startupEditor": "none",
-
+  "editor.emptySelectionClipboard": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "files.autoSave": "afterDelay",
 
-  "blade.format.enable": true,
-  "[blade]": {
-    "editor.autoClosingBrackets": "always"
-  },
-
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "eslint.validate": ["typescript", "typescriptreact", "javascript", "vue"],
-
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-
-  "files.associations": {
-    "*.ts": "typescript",
-    "*.tsx": "typescriptreact"
-  },
-
-  "window.titleBarStyle": "native",
-  "customizeUI.activityBar": "bottom",
-  "customizeUI.titleBar": "inline",
-  "customizeUI.activityBarHideSettings": true,
-  "workbench.sideBar.location": "right",
+  /**
+   * Hide Everything
+   */
   "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "editor.minimap.enabled": false,
 
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  /**
+   * Silence The Noise
+   */
+  "breadcrumbs.enabled": false,
+  "scm.diffDecorations": "none",
+  "editor.matchBrackets": "never",
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "git.decorations.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": false,
+  "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": false,
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.cursorBlinking": "solid",
+  "editor.lineHeight": 35,
+  "editor.suggestFontSize": 15,
+  "editor.suggestLineHeight": 28,
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.5,
+
+  /**
+   * Find
+   **/
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+    "**/vendor/{[^l],?[^ai]}*": true,
+    // Hide everything in /public, except "index.php"
+    "**/public/{[^i],?[^n]}*": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/_ide_helper.php": true,
+    "**/composer.lock": true,
+    "**/package-lock.json": true,
+    "storage": true,
+    ".phpunit.result.cache": true
   },
 
-  "workbench.colorTheme": "One Dark Pro",
-
-  "macros": {
-    "splitAndClose": [
-      "workbench.action.splitEditorToRightGroup",
-      "workbench.action.focusPreviousGroup",
-      "workbench.action.closeActiveEditor"
-    ]
+  /**
+   * Code
+   **/
+  "editor.wordSeparators": "`$-~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "emmet.includeLanguages": {
+    "blade": "html",
+    "vue-html": "html",
+    "vue": "html"
   },
-  "window.zoomLevel": -1
+  "files.associations": {
+    ".php_cs": "php",
+    ".php_cs.dist": "php"
+  },
+
+  /**
+   * PHP
+   **/
+  "php.suggest.basic": false,
+
+  /**
+   * Pint
+   **/
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint",
+    "editor.formatOnSave": true
+  },
+
+  /**
+   * Prettier
+   **/
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "prettier.useEditorConfig": false,
+
+  /**
+   * Additions
+   **/
+
+  "workbench.colorTheme": "One Dark Pro Flat",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ebb9ca"
+  },
+
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "laravel-pint.enable": true,
+
+  "window.titleBarStyle": "custom"
 }
