@@ -1,0 +1,16 @@
+{
+	"Setup Vue Component": {
+		"prefix": "comp",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"const props = defineProps<{",
+			"",
+			"}>()",
+			"</script>",
+			"",
+			"<template>",
+			"",
+			"</template>",
+		],
+	}
+}
